@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const languages = [
   { code: 'pt', flag: '🇧🇷', name: 'Português' },
   { code: 'en', flag: '🇺🇸', name: 'English' },
+  { code: 'fr', flag: '🇫🇷', name: 'Français' },
 ];
 
 export default function LanguageSelector() {

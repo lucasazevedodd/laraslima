@@ -1,0 +1,117 @@
+
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services", 
+    "philosophy": "Philosophie",
+    "packages": "Forfaits",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "LARA LIMA",
+    "subtitle": "Photographe Professionnelle",
+    "description": "Capturer des moments uniques avec un regard artistique et professionnel. Spécialisée en mode, portraits et lifestyle.",
+    "cta": "Parlons Ensemble"
+  },
+  "about": {
+    "title": "À PROPOS DE MOI",
+    "description1": "Je suis du Minas Gerais depuis presque des années, passionnée de mode et de photographie. Je travaille sur des campagnes publicitaires et éditoriales pour des marques de mode féminine au Canada.",
+    "description2": "Maintenant, au Brésil, j'ai l'intention de continuer à apporter mon regard différencié et détaillé aux marques de mon cher pays.",
+    "experience": "Années d'Expérience",
+    "projects": "Projets Réalisés"
+  },
+  "services": {
+    "title": "CE QUE JE LIVRE",
+    "service1": {
+      "title": "Séance avec looks complets",
+      "description": "Photographies professionnelles avec styling complet et direction artistique."
+    },
+    "service2": {
+      "title": "Édition et retouche",
+      "description": "Traitement professionnel des images avec attention aux détails."
+    },
+    "service3": {
+      "title": "Directives spéciales en studio",
+      "description": "Direction créative et environnement contrôlé pour des résultats uniques."
+    },
+    "service4": {
+      "title": "Photos haute qualité, prêtes à publier",
+      "description": "Images optimisées et prêtes pour les réseaux sociaux et marketing."
+    },
+    "service5": {
+      "title": "Galerie en ligne pour clients",
+      "description": "Accès exclusif et sécurisé à vos photographies."
+    },
+    "service6": {
+      "title": "Livraison rapide de l'œuvre",
+      "description": "Processus agile avec qualité garantie."
+    }
+  },
+  "philosophy": {
+    "title": "MA PHILOSOPHIE",
+    "quote1": "J'aime photographier des looks avec une esthétique légère, naturelle et bien pensée. J'ai une équipe qui m'aide dans la production, de la prise de vue à l'édition. Je m'occupe moi-même des détails et livre tout prêt : images haute qualité, éditées, avec attention à la lumière, au décor et au style.",
+    "quote2": "Je crée du contenu avec l'intention de valoriser les pièces et faire que la mode se connecte avec la vraie vie, d'une manière belle, commerciale et authentique."
+  },
+  "packages": {
+    "title": "FORFAITS ET PRIX",
+    "essential": {
+      "name": "ESSENTIEL",
+      "price": "215€",
+      "subtitle": "Parfait pour commencer",
+      "features": [
+        "1 heure de session",
+        "15 photos éditées",
+        "1 lieu",
+        "Galerie en ligne",
+        "Livraison en 7 jours"
+      ],
+      "cta": "Choisir Essentiel"
+    },
+    "professional": {
+      "name": "PROFESSIONNEL",
+      "price": "365€",
+      "subtitle": "Idéal pour les marques",
+      "badge": "LE PLUS POPULAIRE",
+      "features": [
+        "2 heures de session",
+        "30 photos éditées", 
+        "2 lieux différents",
+        "Direction de styling",
+        "Galerie en ligne premium",
+        "Livraison en 5 jours"
+      ],
+      "cta": "Choisir Professionnel"
+    },
+    "premium": {
+      "name": "PREMIUM",
+      "price": "555€", 
+      "subtitle": "Expérience complète",
+      "features": [
+        "4 heures de session",
+        "50 photos éditées",
+        "3 lieux différents", 
+        "Équipe de production",
+        "Vidéo making-of",
+        "Livraison en 3 jours"
+      ],
+      "cta": "Choisir Premium"
+    }
+  },
+  "portfolio": {
+    "title": "PRINCIPAUX TRAVAUX"
+  },
+  "contact": {
+    "title": "ENTRER EN CONTACT",
+    "instagram": "@laralima",
+    "email": "contact@laralima.com",
+    "phone": "+55 (31) 9 9999-9999",
+    "whatsapp": "Contacter sur WhatsApp",
+    "qrcode": "QR Code pour contact"
+  },
+  "whatsapp": {
+    "message": "Bonjour ! J'aimerais en savoir plus sur le forfait {{package}}. Pouvons-nous parler ?",
+    "generalMessage": "Bonjour ! J'aimerais en savoir plus sur vos services de photographie. Pouvons-nous parler ?"
+  }
+}
