@@ -26,26 +26,7 @@ export default function AboutSection() {
               {t('about.description2')}
             </p>
             
-            <div className="grid grid-cols-2 gap-8 mt-12">
-              <motion.div
-                className="text-center"
-                initial={{ opacity: 0, y: 30 }}
-                animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8, delay: 0.4 }}
-              >
-                <div className="text-3xl font-bold text-primary">5+</div>
-                <div className="text-gray-600">{t('about.experience')}</div>
-              </motion.div>
-              <motion.div
-                className="text-center"
-                initial={{ opacity: 0, y: 30 }}
-                animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8, delay: 0.6 }}
-              >
-                <div className="text-3xl font-bold text-primary">100+</div>
-                <div className="text-gray-600">{t('about.projects')}</div>
-              </motion.div>
-            </div>
+            
           </motion.div>
           
           <motion.div

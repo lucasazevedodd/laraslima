@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Accueil",
@@ -17,10 +16,8 @@
   },
   "about": {
     "title": "À PROPOS DE MOI",
-    "description1": "Je suis du Minas Gerais depuis presque des années, passionnée de mode et de photographie. Je travaille sur des campagnes publicitaires et éditoriales pour des marques de mode féminine au Canada.",
-    "description2": "Maintenant, au Brésil, j'ai l'intention de continuer à apporter mon regard différencié et détaillé aux marques de mon cher pays.",
-    "experience": "Années d'Expérience",
-    "projects": "Projets Réalisés"
+    "description1": "Je suis passionnée par la mode, le style et l'image. Je prends mes propres photos avec un appareil professionnel et produis du contenu pensé pour valoriser les vêtements avec naturel, lumière et intention.",
+    "description2": "J'aime créer des images qui reflètent le quotidien avec style — avec cette touche réelle, légère et spontanée qui connecte vraiment avec le public. En plus de poser, je m'occupe de la production, photographie, édition et livraison du contenu prêt à utiliser. Tout avec un regard créatif, une esthétique réfléchie et une touche d'auteur."
   },
   "services": {
     "title": "CE QUE JE LIVRE",
