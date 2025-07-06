@@ -9,12 +9,12 @@ export default function PortfolioSection() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const portfolioImages = [
-    "@assets/WhatsApp Image 2025-07-05 at 9.36.07 AM_1751818933472.jpeg",
-    "@assets/WhatsApp Image 2025-07-05 at 9.36.08 AM_1751818933471.jpeg",
-    "@assets/WhatsApp Image 2025-07-05 at 9.36.08 AM (1)_1751818933471.jpeg",
-    "@assets/WhatsApp Image 2025-07-05 at 9.36.09 AM_1751818933471.jpeg",
-    "@assets/WhatsApp Image 2025-07-05 at 9.36.09 AM (1)_1751818933470.jpeg",
-    "@assets/WhatsApp Image 2025-07-05 at 9.36.10 AM_1751818933470.jpeg",
+    "/WhatsApp Image 2025-07-05 at 9.36.07 AM_1751818933472.jpeg",
+    "/WhatsApp Image 2025-07-05 at 9.36.08 AM_1751818933471.jpeg",
+    "/WhatsApp Image 2025-07-05 at 9.36.08 AM (1)_1751818933471.jpeg",
+    "/WhatsApp Image 2025-07-05 at 9.36.09 AM_1751818933471.jpeg",
+    "/WhatsApp Image 2025-07-05 at 9.36.09 AM (1)_1751818933470.jpeg",
+    "/WhatsApp Image 2025-07-05 at 9.36.10 AM_1751818933470.jpeg",
   ];
 
   const openLightbox = (image: string) => {

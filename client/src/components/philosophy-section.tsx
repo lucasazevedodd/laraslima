@@ -7,9 +7,9 @@ export default function PhilosophySection() {
   const { elementRef, isIntersecting } = useIntersectionObserver();
 
   const images = [
-    "@assets/WhatsApp Image 2025-07-05 at 9.36.10 AM (1)_1751818933469.jpeg",
-    "@assets/WhatsApp Image 2025-07-05 at 10.35.36 AM_1751818933469.jpeg",
-    "@assets/WhatsApp Image 2025-07-05 at 8.49.48 PM_1751818933469.jpeg",
+    "/WhatsApp Image 2025-07-05 at 9.36.10 AM (1)_1751818933469.jpeg",
+    "/WhatsApp Image 2025-07-05 at 10.35.36 AM_1751818933469.jpeg",
+    "/WhatsApp Image 2025-07-05 at 8.49.48 PM_1751818933469.jpeg",
   ];
 
   return (
