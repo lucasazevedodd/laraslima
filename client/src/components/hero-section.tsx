@@ -74,7 +74,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <motion.img
-            src="/attached_assets/WhatsApp Image 2025-07-05 at 9.36.05 AM_1751818933472.jpeg"
+            src="@assets/WhatsApp Image 2025-07-05 at 9.36.05 AM_1751818933472.jpeg"
             alt="Professional portrait"
             className="rounded-2xl shadow-2xl w-full object-cover"
             whileHover={{ rotate: 0, scale: 1.05 }}
@@ -82,7 +82,7 @@ export default function HeroSection() {
             transition={{ duration: 0.3 }}
           />
           <motion.img
-            src="/attached_assets/WhatsApp Image 2025-07-05 at 9.36.06 AM_1751818933472.jpeg"
+            src="@assets/WhatsApp Image 2025-07-05 at 9.36.06 AM_1751818933472.jpeg"
             alt="Fashion photography"
             className="rounded-2xl shadow-2xl w-full object-cover mt-8"
             whileHover={{ rotate: 0, scale: 1.05 }}
