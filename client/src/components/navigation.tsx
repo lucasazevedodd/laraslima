@@ -73,22 +73,44 @@ export default function Navigation() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
             transition={{ duration: 0.3 }}
-            className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg"
+            className="fixed top-0 right-0 h-full w-full bg-white/95 backdrop-blur-md shadow-lg z-50"
           >
-            <div className="flex flex-col space-y-4 p-6">
-              {navItems.map((item) => (
-                <button
-                  key={item.key}
-                  onClick={() => scrollToSection(item.section)}
-                  className="hover:text-primary transition-colors text-left"
-                >
-                  {t(`nav.${item.key}`)}
-                </button>
-              ))}
+            <div className="h-full overflow-y-auto">
+              <div className="flex flex-col h-full">
+                {/* Header with close button */}
+                <div className="flex justify-between items-center p-6 border-b">
+                  <div className="font-roboto font-bold text-xl text-gradient">
+                    LARA LIMA
+                  </div>
+                  <button
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="flex flex-col space-y-1 focus:outline-none"
+                  >
+                    <span className="block w-6 h-0.5 bg-black transform rotate-45 translate-y-1.5"></span>
+                    <span className="block w-6 h-0.5 bg-black transform -rotate-45 -translate-y-1.5"></span>
+                  </button>
+                </div>
+                
+                {/* Navigation items */}
+                <div className="flex flex-col flex-1 justify-center space-y-8 p-6">
+                  {navItems.map((item, index) => (
+                    <motion.button
+                      key={item.key}
+                      initial={{ opacity: 0, x: 50 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.3, delay: index * 0.1 }}
+                      onClick={() => scrollToSection(item.section)}
+                      className="hover:text-primary transition-colors text-left text-2xl font-light"
+                    >
+                      {t(`nav.${item.key}`)}
+                    </motion.button>
+                  ))}
+                </div>
+              </div>
             </div>
           </motion.div>
         )}
