@@ -35,22 +35,8 @@ export default function Navigation() {
           </span>
         </div>
         
-        {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8 items-center">
-          {navItems.map((item) => (
-            <button
-              key={item.key}
-              onClick={() => scrollToSection(item.section)}
-              className="hover:text-primary transition-colors cursor-pointer"
-            >
-              {t(`nav.${item.key}`)}
-            </button>
-          ))}
-          <LanguageSelector />
-        </div>
-        
-        {/* Mobile Hamburger */}
-        <div className="md:hidden flex items-center space-x-4">
+        {/* Hamburger Menu for all screen sizes */}
+        <div className="flex items-center space-x-4">
           <LanguageSelector />
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -83,7 +69,7 @@ export default function Navigation() {
         </div>
       </div>
       
-      {/* Mobile Menu */}
+      {/* Navigation Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -91,7 +77,7 @@ export default function Navigation() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg"
+            className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg"
           >
             <div className="flex flex-col space-y-4 p-6">
               {navItems.map((item) => (
