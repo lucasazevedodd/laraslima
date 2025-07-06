@@ -77,10 +77,10 @@ export default function Navigation() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 right-0 h-full w-full bg-white/95 backdrop-blur-md shadow-lg z-50"
+            className="fixed top-0 right-0 h-screen w-full bg-white/95 backdrop-blur-md shadow-lg z-50"
           >
             <div className="h-full overflow-y-auto">
-              <div className="flex flex-col h-full">
+              <div className="flex flex-col min-h-full">
                 {/* Header with close button */}
                 <div className="flex justify-between items-center p-6 border-b">
                   <div className="font-roboto font-bold text-xl text-gradient">
@@ -88,10 +88,24 @@ export default function Navigation() {
                   </div>
                   <button
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="flex flex-col space-y-1 focus:outline-none"
+                    className="flex flex-col justify-center items-center w-6 h-6 focus:outline-none"
                   >
-                    <span className="block w-6 h-0.5 bg-black transform rotate-45 translate-y-1.5"></span>
-                    <span className="block w-6 h-0.5 bg-black transform -rotate-45 -translate-y-1.5"></span>
+                    <motion.span
+                      className="block w-6 h-0.5 bg-black"
+                      animate={{
+                        rotate: 45,
+                        y: 0,
+                      }}
+                      transition={{ duration: 0.3 }}
+                    />
+                    <motion.span
+                      className="block w-6 h-0.5 bg-black absolute"
+                      animate={{
+                        rotate: -45,
+                        y: 0,
+                      }}
+                      transition={{ duration: 0.3 }}
+                    />
                   </button>
                 </div>
                 
