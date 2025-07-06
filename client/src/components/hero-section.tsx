@@ -17,7 +17,7 @@ export default function HeroSection() {
     <section
       id="inicio"
       ref={elementRef}
-      className="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden pt-24"
+      className="min-h-screen flex items-center justify-center gradient-bg relative overflow-hidden pt-32 md:pt-24"
     >
       <div className="absolute inset-0 opacity-10">
         <div className="w-full h-full bg-gradient-to-br from-white/20 to-transparent"></div>
