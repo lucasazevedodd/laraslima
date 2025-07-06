@@ -9,12 +9,12 @@ export default function PortfolioSection() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const portfolioImages = [
-    "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600",
-    "https://images.unsplash.com/photo-1509631179647-0177331693ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600",
-    "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600",
-    "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600",
-    "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600",
-    "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=600",
+    "/attached_assets/WhatsApp Image 2025-07-05 at 9.36.07 AM_1751818933472.jpeg",
+    "/attached_assets/WhatsApp Image 2025-07-05 at 9.36.08 AM_1751818933471.jpeg",
+    "/attached_assets/WhatsApp Image 2025-07-05 at 9.36.08 AM (1)_1751818933471.jpeg",
+    "/attached_assets/WhatsApp Image 2025-07-05 at 9.36.09 AM_1751818933471.jpeg",
+    "/attached_assets/WhatsApp Image 2025-07-05 at 9.36.09 AM (1)_1751818933470.jpeg",
+    "/attached_assets/WhatsApp Image 2025-07-05 at 9.36.10 AM_1751818933470.jpeg",
   ];
 
   const openLightbox = (image: string) => {

@@ -74,7 +74,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <motion.img
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600"
+            src="/attached_assets/WhatsApp Image 2025-07-05 at 9.36.05 AM_1751818933472.jpeg"
             alt="Professional portrait"
             className="rounded-2xl shadow-2xl w-full object-cover"
             whileHover={{ rotate: 0, scale: 1.05 }}
@@ -82,7 +82,7 @@ export default function HeroSection() {
             transition={{ duration: 0.3 }}
           />
           <motion.img
-            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600"
+            src="/attached_assets/WhatsApp Image 2025-07-05 at 9.36.06 AM_1751818933472.jpeg"
             alt="Fashion photography"
             className="rounded-2xl shadow-2xl w-full object-cover mt-8"
             whileHover={{ rotate: 0, scale: 1.05 }}

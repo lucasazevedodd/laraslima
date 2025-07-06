@@ -7,9 +7,9 @@ export default function PhilosophySection() {
   const { elementRef, isIntersecting } = useIntersectionObserver();
 
   const images = [
-    "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500",
-    "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500",
-    "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=500",
+    "/attached_assets/WhatsApp Image 2025-07-05 at 9.36.10 AM (1)_1751818933469.jpeg",
+    "/attached_assets/WhatsApp Image 2025-07-05 at 10.35.36 AM_1751818933469.jpeg",
+    "/attached_assets/WhatsApp Image 2025-07-05 at 8.49.48 PM_1751818933469.jpeg",
   ];
 
   return (
