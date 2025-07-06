@@ -29,27 +29,27 @@ export default function ContactSection() {
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
-              className="text-white text-right"
+              className="text-white text-center md:text-right"
               initial={{ opacity: 0, x: -50 }}
               animate={isIntersecting ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="space-y-6 mb-8">
-                <div className="flex items-center justify-end space-x-4">
+                <div className="flex items-center justify-center md:justify-end space-x-4">
                   <span className="text-lg">{t('contact.instagram')}</span>
                   <Instagram className="w-6 h-6" />
                 </div>
-                <div className="flex items-center justify-end space-x-4">
+                <div className="flex items-center justify-center md:justify-end space-x-4">
                   <span className="text-lg">{t('contact.email')}</span>
                   <Mail className="w-6 h-6" />
                 </div>
-                <div className="flex items-center justify-end space-x-4">
+                <div className="flex items-center justify-center md:justify-end space-x-4">
                   <span className="text-lg">{t('contact.phone')}</span>
                   <Phone className="w-6 h-6" />
                 </div>
               </div>
               
-              <div className="flex justify-end">
+              <div className="flex justify-center md:justify-end">
                 <motion.button
                   onClick={openWhatsApp}
                   className="bg-[#25D366] hover:bg-[#128C7E] text-white px-10 py-4 rounded-full font-medium transition-all duration-300 inline-flex items-center space-x-3 shadow-lg hover:shadow-xl"
@@ -65,7 +65,7 @@ export default function ContactSection() {
             </motion.div>
             
             <motion.div
-              className="flex justify-start"
+              className="flex justify-center md:justify-start"
               initial={{ opacity: 0, x: 50 }}
               animate={isIntersecting ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}
