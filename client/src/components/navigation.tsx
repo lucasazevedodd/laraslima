@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
@@ -35,197 +34,167 @@ export default function Navigation() {
             {t('hero.subtitle').toUpperCase()}
           </span>
         </div>
-        
-        {/* Hamburger Menu for all screen sizes */}
+
+        {/* Language Selector and Hamburger Menu */}
         <div className="flex items-center space-x-4">
           <LanguageSelector />
-          <button
+
+          {/* Animated Hamburger Icon */}
+          <div 
+            className="hamburger-icon"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="flex flex-col space-y-1 focus:outline-none relative z-[60]"
           >
-            <motion.span
-              className="block w-6 h-0.5 bg-black"
-              animate={{
-                rotate: isMobileMenuOpen ? 45 : 0,
-                y: isMobileMenuOpen ? 6 : 0,
-              }}
-              transition={{ duration: 0.3 }}
-            />
-            <motion.span
-              className="block w-6 h-0.5 bg-black"
-              animate={{
-                opacity: isMobileMenuOpen ? 0 : 1,
-              }}
-              transition={{ duration: 0.3 }}
-            />
-            <motion.span
-              className="block w-6 h-0.5 bg-black"
-              animate={{
-                rotate: isMobileMenuOpen ? -45 : 0,
-                y: isMobileMenuOpen ? -6 : 0,
-              }}
-              transition={{ duration: 0.3 }}
-            />
-          </button>
+            <div className={`icon-1 ${isMobileMenuOpen ? 'a' : ''}`}></div>
+            <div className={`icon-2 ${isMobileMenuOpen ? 'c' : ''}`}></div>
+            <div className={`icon-3 ${isMobileMenuOpen ? 'b' : ''}`}></div>
+          </div>
         </div>
       </div>
-      
+
+      {/* Blue Background Layer */}
+      <div className={`dark-blue ${isMobileMenuOpen ? 'slide' : ''}`}></div>
+
       {/* Navigation Menu */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, x: "100%" }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: "100%" }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="fixed top-0 right-0 h-screen w-full z-50"
-          >
-            {/* Backdrop with gradient */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
-              className="absolute inset-0 bg-gradient-to-br from-black/80 via-purple-900/60 to-pink-800/40 backdrop-blur-xl"
-            />
-            
-            {/* Menu Content */}
-            <div className="relative h-full overflow-y-auto">
-              <div className="flex flex-col min-h-full">
-                {/* Header with floating effect */}
-                <motion.div 
-                  className="flex justify-between items-center p-6 border-b border-white/20"
-                  initial={{ y: -50, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
-                >
-                  <div className="font-roboto font-bold text-xl text-white">
-                    <motion.span
-                      initial={{ scale: 0.8 }}
-                      animate={{ scale: 1 }}
-                      transition={{ duration: 0.5, delay: 0.2 }}
-                      className="block bg-gradient-to-r from-white via-pink-200 to-purple-200 bg-clip-text text-transparent"
-                    >
-                      LARA LIMA
-                    </motion.span>
-                  </div>
-                  <motion.button
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="flex flex-col justify-center items-center w-8 h-8 focus:outline-none relative"
-                    whileHover={{ scale: 1.1, rotate: 90 }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <motion.span
-                      className="block w-6 h-0.5 bg-white"
-                      animate={{ rotate: 45, y: 0 }}
-                      transition={{ duration: 0.3 }}
-                    />
-                    <motion.span
-                      className="block w-6 h-0.5 bg-white absolute"
-                      animate={{ rotate: -45, y: 0 }}
-                      transition={{ duration: 0.3 }}
-                    />
-                  </motion.button>
-                </motion.div>
-                
-                {/* Navigation items with creative animations */}
-                <div className="flex flex-col flex-1 justify-center space-y-4 p-8">
-                  {navItems.map((item, index) => (
-                    <motion.div
-                      key={item.key}
-                      initial={{ opacity: 0, x: 100, rotateY: 90 }}
-                      animate={{ opacity: 1, x: 0, rotateY: 0 }}
-                      transition={{ 
-                        duration: 0.6, 
-                        delay: index * 0.1 + 0.2,
-                        ease: "easeOut"
-                      }}
-                      className="relative group"
-                    >
-                      {/* Background glow effect */}
-                      <motion.div
-                        className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent rounded-lg opacity-0 group-hover:opacity-100"
-                        initial={{ scale: 0.8 }}
-                        whileHover={{ scale: 1 }}
-                        transition={{ duration: 0.3 }}
-                      />
-                      
-                      {/* Floating particles effect */}
-                      <motion.div
-                        className="absolute -left-4 top-1/2 w-2 h-2 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full opacity-0 group-hover:opacity-100"
-                        animate={{
-                          y: [-10, 10, -10],
-                          scale: [0.8, 1.2, 0.8],
-                        }}
-                        transition={{
-                          duration: 2,
-                          repeat: Infinity,
-                          ease: "easeInOut"
-                        }}
-                      />
-                      
-                      <motion.button
-                        onClick={() => scrollToSection(item.section)}
-                        className="relative w-full text-left py-4 px-6 rounded-lg text-2xl font-light text-white hover:text-pink-200 transition-all duration-300 group-hover:translate-x-2"
-                        whileHover={{ 
-                          scale: 1.05,
-                          textShadow: "0 0 20px rgba(255,255,255,0.5)"
-                        }}
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        <motion.span
-                          className="relative z-10"
-                          initial={{ opacity: 0.8 }}
-                          whileHover={{ opacity: 1 }}
-                        >
-                          {t(`nav.${item.key}`)}
-                        </motion.span>
-                        
-                        {/* Animated underline */}
-                        <motion.div
-                          className="absolute bottom-2 left-6 h-0.5 bg-gradient-to-r from-pink-400 to-purple-400"
-                          initial={{ width: 0 }}
-                          whileHover={{ width: "calc(100% - 48px)" }}
-                          transition={{ duration: 0.3 }}
-                        />
-                      </motion.button>
-                    </motion.div>
-                  ))}
-                </div>
-                
-                {/* Decorative elements */}
-                <motion.div
-                  className="absolute top-1/4 right-8 w-20 h-20 bg-gradient-to-br from-pink-400/20 to-purple-400/20 rounded-full blur-xl"
-                  animate={{
-                    scale: [1, 1.2, 1],
-                    opacity: [0.3, 0.6, 0.3],
-                  }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                />
-                
-                <motion.div
-                  className="absolute bottom-1/4 left-8 w-16 h-16 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-xl"
-                  animate={{
-                    scale: [1, 1.3, 1],
-                    opacity: [0.2, 0.5, 0.2],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                    delay: 1
-                  }}
-                />
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <nav className={`side-nav ${isMobileMenuOpen ? 'show' : ''}`}>
+        <ul>
+          {navItems.map((item) => (
+            <li key={item.key} onClick={() => scrollToSection(item.section)}>
+              {t(`nav.${item.key}`)}
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      {/* Custom Styles */}
+      <style jsx>{`
+        .hamburger-icon {
+          position: relative;
+          height: 60px;
+          width: 60px;
+          z-index: 1000;
+          cursor: pointer;
+          border-radius: 50%;
+          transition: all 0.2s ease-in-out;
+          background: rgba(0, 0, 0, 0.1);
+        }
+
+        .hamburger-icon:hover {
+          transform: scale(1.2);
+          box-shadow: 0px 0px 30px rgba(0,0,0,0.1);
+        }
+
+        .icon-1, .icon-2, .icon-3 {
+          position: absolute;
+          left: 25%;
+          top: 50%;
+          width: 32px;
+          height: 3px;
+          background-color: black;
+          transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
+        }
+
+        .icon-1 {
+          transform: translateY(-8px);
+          animation-delay: 100ms;
+        }
+
+        .icon-3 {
+          transform: translateY(8px);
+          animation-delay: 250ms;
+        }
+
+        .icon-1.a {
+          transform: rotate(40deg);
+        }
+
+        .icon-3.b {
+          transform: rotate(-40deg);
+        }
+
+        .icon-2.c {
+          opacity: 0;
+        }
+
+        .side-nav {
+          background: #0288D1;
+          position: fixed;
+          top: 0;
+          right: 0;
+          height: 100vh;
+          width: 0%;
+          z-index: 10;
+          opacity: 0;
+          transition: all 600ms cubic-bezier(.62,.04,.3,1.56);
+          transition-delay: 100ms;
+        }
+
+        .side-nav ul {
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          top: 30%;
+          left: 40%;
+          transform: translateX(-50%);
+        }
+
+        .side-nav li {
+          list-style: none;
+          font-size: 24px;
+          color: #fff;
+          line-height: 2.2;
+          text-transform: uppercase;
+          letter-spacing: 1.7px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          padding: 10px 20px;
+        }
+
+        .side-nav li:hover {
+          background: rgba(255, 255, 255, 0.1);
+          transform: translateX(10px);
+        }
+
+        .side-nav.show {
+          width: 50%;
+          opacity: 1;
+        }
+
+        .dark-blue {
+          position: fixed;
+          top: 0;
+          right: 0;
+          background: #64B5F6;
+          height: 100vh;
+          width: 0%;
+          transition: all 500ms cubic-bezier(.62,.04,.3,1.8);
+          transition-delay: 50ms;
+          z-index: 5;
+          opacity: 1;
+        }
+
+        .dark-blue.slide {
+          width: 50%;
+          opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+          .side-nav.show {
+            width: 80%;
+          }
+
+          .dark-blue.slide {
+            width: 80%;
+          }
+
+          .side-nav ul {
+            left: 50%;
+          }
+
+          .side-nav li {
+            font-size: 20px;
+          }
+        }
+      `}</style>
     </nav>
   );
 }
