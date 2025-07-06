@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "philosophy": "Philosophy", 
+    "packages": "Packages",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "LARA LIMA",
+    "subtitle": "Professional Photographer",
+    "description": "Capturing unique moments with an artistic and professional eye. Specialized in fashion, portraits and lifestyle.",
+    "cta": "Let's Talk"
+  },
+  "about": {
+    "title": "ABOUT ME",
+    "description1": "I'm from Minas Gerais for almost years, passionate about fashion and photography. I work on advertising campaigns and editorials for women's fashion brands in Canada.",
+    "description2": "Now, in Brazil, I intend to continue bringing my differentiated and detailed look to the brands of my beloved country.",
+    "experience": "Years of Experience",
+    "projects": "Projects Completed"
+  },
+  "services": {
+    "title": "WHAT I DELIVER",
+    "service1": {
+      "title": "Complete look photoshoots",
+      "description": "Professional photography with complete styling and art direction."
+    },
+    "service2": {
+      "title": "Editing and retouching",
+      "description": "Professional image treatment with attention to details."
+    },
+    "service3": {
+      "title": "Special studio guidelines",
+      "description": "Creative direction and controlled environment for unique results."
+    },
+    "service4": {
+      "title": "High quality photos, ready to publish",
+      "description": "Optimized images ready for social media and marketing."
+    },
+    "service5": {
+      "title": "Online gallery for clients",
+      "description": "Exclusive and secure access to your photographs."
+    },
+    "service6": {
+      "title": "Fast delivery",
+      "description": "Agile process with guaranteed quality."
+    }
+  },
+  "philosophy": {
+    "title": "MY PHILOSOPHY",
+    "quote1": "I like to photograph looks with a light, natural and well-thought aesthetic. I have a team that helps me in production, from capture to editing. I take care of the details myself and deliver everything ready: high quality images, edited, with attention to light, scenery and style.",
+    "quote2": "I create content with the intention of valuing the pieces and making fashion connect with real life, in a beautiful, commercial and authentic way."
+  },
+  "packages": {
+    "title": "PACKAGES & PRICING",
+    "essential": {
+      "name": "ESSENTIAL",
+      "price": "$215",
+      "subtitle": "Perfect to start",
+      "features": [
+        "1 hour session",
+        "15 edited photos",
+        "1 location",
+        "Online gallery",
+        "7 days delivery"
+      ],
+      "cta": "Choose Essential"
+    },
+    "professional": {
+      "name": "PROFESSIONAL", 
+      "price": "$365",
+      "subtitle": "Ideal for brands",
+      "badge": "MOST POPULAR",
+      "features": [
+        "2 hour session",
+        "30 edited photos",
+        "2 different locations", 
+        "Styling direction",
+        "Premium online gallery",
+        "5 days delivery"
+      ],
+      "cta": "Choose Professional"
+    },
+    "premium": {
+      "name": "PREMIUM",
+      "price": "$555",
+      "subtitle": "Complete experience",
+      "features": [
+        "4 hour session",
+        "50 edited photos",
+        "3 different locations",
+        "Production team",
+        "Behind the scenes video",
+        "3 days delivery"
+      ],
+      "cta": "Choose Premium"
+    }
+  },
+  "portfolio": {
+    "title": "MAIN WORKS"
+  },
+  "contact": {
+    "title": "GET IN TOUCH",
+    "instagram": "@laralima",
+    "email": "contact@laralima.com",
+    "phone": "+55 (31) 9 9999-9999",
+    "whatsapp": "Contact on WhatsApp",
+    "qrcode": "QR Code for contact"
+  },
+  "whatsapp": {
+    "message": "Hello! I would like to know more about the {{package}} package. Can we talk?",
+    "generalMessage": "Hello! I would like to know more about your photography services. Can we talk?"
+  }
+}

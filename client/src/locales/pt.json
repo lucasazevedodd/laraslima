@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "services": "Serviços", 
+    "philosophy": "Filosofia",
+    "packages": "Pacotes",
+    "portfolio": "Portfolio",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "LARA LIMA",
+    "subtitle": "Fotógrafa Profissional",
+    "description": "Capturando momentos únicos com um olhar artístico e profissional. Especializada em moda, retratos e lifestyle.",
+    "cta": "Vamos Conversar"
+  },
+  "about": {
+    "title": "SOBRE MIM",
+    "description1": "Sou mineira há quase anos, apaixonada por moda e fotografia. Atua em campanhas publicitárias e editoriais para marcas de moda feminina no Canadá.",
+    "description2": "Agora, no Brasil, pretendo continuar trazendo o meu olhar diferenciado e detalhista às marcas do meu querido país.",
+    "experience": "Anos de Experiência",
+    "projects": "Projetos Realizados"
+  },
+  "services": {
+    "title": "O QUE EU ENTREGO",
+    "service1": {
+      "title": "Ensaio com looks completos",
+      "description": "Fotografias profissionais com styling completo e direção de arte."
+    },
+    "service2": {
+      "title": "Edição e retoque",
+      "description": "Tratamento profissional das imagens com atenção aos detalhes."
+    },
+    "service3": {
+      "title": "Diretrizes especiais em estúdio",
+      "description": "Direção criativa e ambiente controlado para resultados únicos."
+    },
+    "service4": {
+      "title": "Fotos em alta qualidade, prontas para publicar",
+      "description": "Imagens otimizadas e prontas para redes sociais e marketing."
+    },
+    "service5": {
+      "title": "Galeria online para clientes",
+      "description": "Acesso exclusivo e seguro às suas fotografias."
+    },
+    "service6": {
+      "title": "Entrega rápida da obra",
+      "description": "Processo ágil com qualidade garantida."
+    }
+  },
+  "philosophy": {
+    "title": "MINHA FILOSOFIA",
+    "quote1": "Gosto de fotografar looks com uma estética leve, natural e bem pensada. Tenho uma equipe que me ajuda na produção, desde a captação até a edição. Eu mesma cuido dos detalhes e entrego tudo pronto: imagens em alta qualidade, editadas, com atenção à luz, cenário e estilo.",
+    "quote2": "Crio conteúdo com a intenção de valorizar as peças e fazer com que a moda se conecte com a vida real, de um jeito bonito, comercial e autêntico."
+  },
+  "packages": {
+    "title": "PACOTES E PREÇOS",
+    "essential": {
+      "name": "ESSENCIAL",
+      "price": "R$ 850",
+      "subtitle": "Perfeito para começar",
+      "features": [
+        "1 hora de sessão",
+        "15 fotos editadas",
+        "1 local",
+        "Galeria online",
+        "Entrega em 7 dias"
+      ],
+      "cta": "Escolher Essencial"
+    },
+    "professional": {
+      "name": "PROFISSIONAL",
+      "price": "R$ 1.450",
+      "subtitle": "Ideal para marcas",
+      "badge": "MAIS POPULAR",
+      "features": [
+        "2 horas de sessão",
+        "30 fotos editadas", 
+        "2 locais diferentes",
+        "Direção de styling",
+        "Galeria online premium",
+        "Entrega em 5 dias"
+      ],
+      "cta": "Escolher Profissional"
+    },
+    "premium": {
+      "name": "PREMIUM",
+      "price": "R$ 2.200", 
+      "subtitle": "Experiência completa",
+      "features": [
+        "4 horas de sessão",
+        "50 fotos editadas",
+        "3 locais diferentes", 
+        "Equipe de produção",
+        "Vídeo behind the scenes",
+        "Entrega em 3 dias"
+      ],
+      "cta": "Escolher Premium"
+    }
+  },
+  "portfolio": {
+    "title": "PRINCIPAIS TRABALHOS"
+  },
+  "contact": {
+    "title": "ENTRE EM CONTATO",
+    "instagram": "@laralima",
+    "email": "contato@laralima.com",
+    "phone": "+55 (31) 9 9999-9999",
+    "whatsapp": "Chamar no WhatsApp",
+    "qrcode": "QR Code para contato"
+  },
+  "whatsapp": {
+    "message": "Olá! Gostaria de saber mais sobre o pacote {{package}}. Podemos conversar?",
+    "generalMessage": "Olá! Gostaria de saber mais sobre seus serviços de fotografia. Podemos conversar?"
+  }
+}
