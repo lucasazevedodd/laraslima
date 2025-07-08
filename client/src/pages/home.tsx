@@ -17,7 +17,7 @@ export default function Home() {
       <AboutSection />
       <ServicesSection />
       <PhilosophySection />
-      <PricingSection />
+      {/* <PricingSection /> */}
       <PortfolioSection />
       <ContactSection />
       <WhatsAppButton />

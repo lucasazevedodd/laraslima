@@ -6,7 +6,7 @@ export default function WhatsAppButton() {
   const { t } = useTranslation();
 
   const openWhatsApp = () => {
-    const phoneNumber = '5531999999999';
+    const phoneNumber = '5588992747170';
     const message = encodeURIComponent(t('whatsapp.generalMessage'));
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');

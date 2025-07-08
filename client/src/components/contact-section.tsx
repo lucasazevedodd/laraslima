@@ -1,14 +1,16 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
-import { Instagram, Mail, Phone, QrCode } from "lucide-react";
+import { Instagram, Mail, Phone } from "lucide-react";
+
+import qrCode from './../images/qr-code.svg';
 
 export default function ContactSection() {
   const { t } = useTranslation();
   const { elementRef, isIntersecting } = useIntersectionObserver();
 
   const openWhatsApp = () => {
-    const phoneNumber = '5531999999999';
+    const phoneNumber = '5588992747170';
     const message = encodeURIComponent(t('whatsapp.generalMessage'));
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
@@ -71,8 +73,15 @@ export default function ContactSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               <div className="bg-white p-8 rounded-2xl shadow-2xl">
-                <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-                  <QrCode className="w-16 h-16 text-gray-400" />
+                <div className="w-[200px] h-[200px] bg-gray-200 rounded-lg flex items-center justify-center">
+                  <motion.img
+                    src={qrCode}
+                    alt="Professional portrait"
+                    className="w-full object-cover"
+                    whileHover={{ rotate: 0, scale: 1 }}
+                    initial={{ rotate: 0 }}
+                    transition={{ duration: 0.3 }}
+                  />
                 </div>
                 <p className="text-gray-600 mt-4 text-sm text-center">
                   {t('contact.qrcode')}

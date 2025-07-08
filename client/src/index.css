@@ -141,3 +141,7 @@
     font-family: 'Open Sans', sans-serif;
   }
 }
+
+.max-h-full {
+  max-height: calc(100dvh - 40px);
+}

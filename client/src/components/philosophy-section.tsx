@@ -1,15 +1,16 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import image1 from './../images/portfolio1.webp';
+import image2 from './../images/portfolio8.webp';
+import image3 from './../images/portfolio3.webp';
 
 export default function PhilosophySection() {
   const { t } = useTranslation();
   const { elementRef, isIntersecting } = useIntersectionObserver();
 
   const images = [
-    "/WhatsApp Image 2025-07-05 at 9.36.10 AM (1)_1751818933469.jpeg",
-    "/WhatsApp Image 2025-07-05 at 10.35.36 AM_1751818933469.jpeg",
-    "/WhatsApp Image 2025-07-05 at 8.49.48 PM_1751818933469.jpeg",
+    image1, image2, image3
   ];
 
   return (

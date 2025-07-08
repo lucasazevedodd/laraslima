@@ -2,6 +2,12 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { useState } from "react";
+import image1 from './../images/portfolio1.webp';
+import image2 from './../images/portfolio9.webp';
+import image3 from './../images/portfolio3.webp';
+import image4 from './../images/portfolio10.webp';
+import image5 from './../images/portfolio13.webp';
+import image6 from './../images/portfolio6.webp';
 
 export default function PortfolioSection() {
   const { t } = useTranslation();
@@ -9,12 +15,7 @@ export default function PortfolioSection() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const portfolioImages = [
-    "/WhatsApp Image 2025-07-05 at 9.36.07 AM_1751818933472.jpeg",
-    "/WhatsApp Image 2025-07-05 at 9.36.08 AM_1751818933471.jpeg",
-    "/WhatsApp Image 2025-07-05 at 9.36.08 AM (1)_1751818933471.jpeg",
-    "/WhatsApp Image 2025-07-05 at 9.36.09 AM_1751818933471.jpeg",
-    "/WhatsApp Image 2025-07-05 at 9.36.09 AM (1)_1751818933470.jpeg",
-    "/WhatsApp Image 2025-07-05 at 9.36.10 AM_1751818933470.jpeg",
+    image1, image2, image3, image4, image5, image6
   ];
 
   const openLightbox = (image: string) => {

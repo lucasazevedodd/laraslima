@@ -116,7 +116,7 @@ export default function Navigation() {
         }
 
         .side-nav {
-          background: #0288D1;
+          background: #333;
           position: fixed;
           top: 0;
           right: 0;
@@ -132,9 +132,9 @@ export default function Navigation() {
           margin: 0;
           padding: 0;
           position: absolute;
-          top: 30%;
+          top: 50%;
           left: 40%;
-          transform: translateX(-50%);
+          transform: translate(-50%, -50%);
         }
 
         .side-nav li {
@@ -163,7 +163,7 @@ export default function Navigation() {
           position: fixed;
           top: 0;
           right: 0;
-          background: #64B5F6;
+          background: #333;
           height: 100vh;
           width: 0%;
           transition: all 500ms cubic-bezier(.62,.04,.3,1.8);

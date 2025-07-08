@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import profile from './../images/portfolio11.webp'
 
 export default function AboutSection() {
   const { t } = useTranslation();
@@ -36,7 +37,7 @@ export default function AboutSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1521341957697-b93449760f30?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800"
+              src={profile}
               alt="Lara Lima Portrait"
               className="rounded-2xl shadow-2xl w-full object-cover"
             />

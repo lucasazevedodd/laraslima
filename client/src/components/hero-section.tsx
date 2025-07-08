@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
+import image1 from './../images/portfolio10.webp';
+import image2 from './../images/portfolio15.webp';
 
 export default function HeroSection() {
   const { t } = useTranslation();
@@ -74,7 +76,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <motion.img
-            src="/WhatsApp Image 2025-07-05 at 9.36.05 AM_1751818933472.jpeg"
+            src={image1}
             alt="Professional portrait"
             className="rounded-2xl shadow-2xl w-full object-cover"
             whileHover={{ rotate: 0, scale: 1.05 }}
@@ -82,7 +84,7 @@ export default function HeroSection() {
             transition={{ duration: 0.3 }}
           />
           <motion.img
-            src="/WhatsApp Image 2025-07-05 at 9.36.06 AM_1751818933472.jpeg"
+            src={image2}
             alt="Fashion photography"
             className="rounded-2xl shadow-2xl w-full object-cover mt-8"
             whileHover={{ rotate: 0, scale: 1.05 }}
