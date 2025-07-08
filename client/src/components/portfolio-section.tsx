@@ -4,7 +4,7 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { useState } from "react";
 import image1 from './../images/portfolio1.webp';
 import image2 from './../images/portfolio9.webp';
-import image3 from './../images/portfolio3.webp';
+import image3 from './../images/portfolio17.webp';
 import image4 from './../images/portfolio10.webp';
 import image5 from './../images/portfolio13.webp';
 import image6 from './../images/portfolio6.webp';
