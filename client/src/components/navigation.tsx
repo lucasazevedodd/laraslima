@@ -20,7 +20,7 @@ export default function Navigation() {
     { key: 'about', section: 'sobre' },
     { key: 'services', section: 'servicos' },
     { key: 'philosophy', section: 'filosofia' },
-    { key: 'packages', section: 'pacotes' },
+    // { key: 'packages', section: 'pacotes' },
     { key: 'portfolio', section: 'portfolio' },
     { key: 'contact', section: 'contato' },
   ];
