@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
-import { Instagram, Mail, Phone } from "lucide-react";
+import { Contact, Instagram, Mail, Phone } from "lucide-react";
 
 import qrCode from './../images/qr-code.svg';
 
@@ -37,18 +37,18 @@ export default function ContactSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="space-y-6 mb-8">
-                <div className="flex items-center justify-center md:justify-end space-x-4">
-                  <span className="text-lg">{t('contact.instagram')}</span>
-                  <Instagram className="w-6 h-6" />
-                </div>
-                <div className="flex items-center justify-center md:justify-end space-x-4">
+                <a href="https://instagram.com/iamlaralima" target="_blank" className="flex items-center justify-center md:justify-end space-x-4">
+                    <span className="text-lg">{t('contact.instagram')}</span>
+                    <Instagram className="w-6 h-6" />
+                </a>
+                <a href={'mailto:' + t('contact.email')} target="_blank" className="flex items-center justify-center md:justify-end space-x-4">
                   <span className="text-lg">{t('contact.email')}</span>
                   <Mail className="w-6 h-6" />
-                </div>
-                <div className="flex items-center justify-center md:justify-end space-x-4">
+                </a>
+                <a href={'tel:' + t('contact.phone')} target="_blank" className="flex items-center justify-center md:justify-end space-x-4">
                   <span className="text-lg">{t('contact.phone')}</span>
                   <Phone className="w-6 h-6" />
-                </div>
+                </a>
               </div>
               
               <div className="flex justify-center md:justify-end">
