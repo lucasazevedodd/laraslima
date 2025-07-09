@@ -37,15 +37,15 @@ export default function ContactSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <div className="space-y-6 mb-8">
-                <a href="https://instagram.com/iamlaralima" target="_blank" className="flex items-center justify-center md:justify-end space-x-4">
+                <a href="https://instagram.com/iamlaralima" target="_blank" className="flex items-center justify-center md:justify-end space-x-4 underline">
                     <span className="text-lg">{t('contact.instagram')}</span>
                     <Instagram className="w-6 h-6" />
                 </a>
-                <a href={'mailto:' + t('contact.email')} target="_blank" className="flex items-center justify-center md:justify-end space-x-4">
+                <a href={'mailto:' + t('contact.email')} target="_blank" className="flex items-center justify-center md:justify-end space-x-4 underline">
                   <span className="text-lg">{t('contact.email')}</span>
                   <Mail className="w-6 h-6" />
                 </a>
-                <a href={'tel:' + t('contact.phone')} target="_blank" className="flex items-center justify-center md:justify-end space-x-4">
+                <a href={'tel:' + t('contact.phone')} target="_blank" className="flex items-center justify-center md:justify-end space-x-4 underline">
                   <span className="text-lg">{t('contact.phone')}</span>
                   <Phone className="w-6 h-6" />
                 </a>
