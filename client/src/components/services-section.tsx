@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
-import { Camera, Edit, Users, Image, Clock, Zap } from "lucide-react";
+import { Camera, Edit, Video, Image, Clock, Zap } from "lucide-react";
 
-const serviceIcons = [Camera, Edit, Users, Image, Clock, Zap];
+const serviceIcons = [Camera, Edit, Video, Image, Clock, Zap];
 
 export default function ServicesSection() {
   const { t } = useTranslation();
